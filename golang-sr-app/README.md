@@ -14,7 +14,7 @@ To run this application your setup must meet the following conditions:
 1. Clone this repository
 
 ```bash
-git clone git@github.com:jalapeno-api-gateway/sample-sr-apps.git
+$ git clone git@github.com:jalapeno-api-gateway/sample-sr-apps.git
 ```
 
 2. Change to this directory and start the application (providing the server address and port of your JAGW instance)
