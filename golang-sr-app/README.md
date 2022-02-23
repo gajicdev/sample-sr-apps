@@ -20,7 +20,7 @@ $ git clone git@github.com:jalapeno-api-gateway/sample-sr-apps.git
 2. Change to this directory and start the application (providing the server address and port of your JAGW instance)
 
 ```bash
-$ cd golang-sr-app
+$ cd sample-sr-apps/golang-sr-app
 $ go run main.go <server-address> <request-service-port>
 ```
 
