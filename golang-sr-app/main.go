@@ -30,7 +30,7 @@ func main() {
 	// Request all Nodes
 	request := &jagw.TopologyRequest{
 		Keys: []string{},
-		PropertyNames: []string{},
+		Properties: []string{},
 	}
 
 	response, err := client.GetLsNodes(context.Background(), request)
