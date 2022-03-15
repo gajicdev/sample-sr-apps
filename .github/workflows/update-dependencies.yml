@@ -6,6 +6,9 @@ on:
       tag_name:
         type: string
         required: true
+      protorepo_jagw_go_ref:
+        type: string
+        required: true
 
 jobs:
   update-dependencies:
@@ -21,7 +24,7 @@ jobs:
       - name: Update dependencies
         run: |
           cd golang-sr-app
-          go get github.com/jalapeno-api-gateway/protorepo-jagw-go@${{ inputs.tag_name }}
+          go get github.com/jalapeno-api-gateway/protorepo-jagw-go@${{ inputs.protorepo_jagw_go_ref }}
           go mod tidy
       - name: Create PR for local changes
         id: cpr
