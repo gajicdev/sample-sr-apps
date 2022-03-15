@@ -20,6 +20,7 @@ jobs:
           go-version: '1.17.2'
       - name: Update dependencies
         run: |
+          cd golang-sr-app
           go get github.com/jalapeno-api-gateway/protorepo-jagw-go@${{ inputs.tag_name }}
           go mod tidy
       - name: Create PR for local changes
